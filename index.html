@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SNEK – Eat. Grow. Survive.</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Quick inline CSS to keep it simple */
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    .phone-frame {
+      background: #000;
+      border: 8px solid #333;
+      border-radius: 40px;
+      width: 300px;
+      height: 600px;
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      background: #111;
+      width: 280px;
+      height: 580px;
+      border-radius: 30px;
+    }
+
+    .leaderboard {
+      max-width: 300px;
+      margin: 2rem 0;
+      text-align: left;
+    }
+
+    .leaderboard h2 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .leaderboard table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .leaderboard th,
+    .leaderboard td {
+      border-bottom: 1px solid #444;
+      padding: 0.3rem;
+      text-align: left;
+    }
+
+    .cta {
+      margin: 2rem 0;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #00FF7F;
+      color: #000;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #00FF7F;
+      text-decoration: none;
+      margin: 0 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>SNEK – Eat. Grow. Survive.</h1>
+  <p>Classic snake, modern twist. Play now — one swipe at a time.</p>
+
+  <div class="phone-frame">
+    <!-- Your playable web version will go here -->
+    <canvas id="snekGame">Your browser does not support the canvas element.</canvas>
+  </div>
+
+  <div class="leaderboard">
+    <h2>Leaderboard</h2>
+    <table>
+      <thead>
+        <tr><th>Rank</th><th>Score</th><th>Player</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>200</td><td>Player1</td></tr>
+        <tr><td>2</td><td>180</td><td>Player2</td></tr>
+        <tr><td>3</td><td>170</td><td>Player3</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="cta">
+    <a href="https://apps.apple.com/" target="_blank">Download on the App Store</a>
+  </div>
+
+  <footer>
+    <a href="/privacy-policy">Privacy Policy</a> |
+    <a href="/support">Support</a>
+  </footer>
+</body>
+</html>
 
